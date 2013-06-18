@@ -1,5 +1,6 @@
 Payboard::Application.routes.draw do
   mount StripeEvent::Engine => '/stripe'
+  get "content/free"
   get "content/gold"
   get "content/silver"
   get "content/platinum"
